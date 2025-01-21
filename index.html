@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Properties</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Royal Properties</div>
+        <nav>
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Certificates.html">Certificates</a></li>
+                <li class="navbar-item">
+                    <a href="tel:+9118008331883">
+                        <i class="fas fa-phone-alt"></i> 18008331883
+                    </a>
+                </li>
+                <li class="navbar-item">
+                  <a href="https://wa.me/919999118993" target="_blank">
+                      <i class="fab fa-whatsapp"></i> WhatsApp
+                  </a>
+              </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- home  -->
+     <!-- Hero Section with Slider and Overlay Text -->
+<section id="hero" class="hero">
+    <div class="slider-container">
+        <div class="slider">
+            <!-- Slider Images -->
+            <div class="slide"><img src="temp1.jpg" alt="Property 1"></div>
+            <div class="slide"><img src="temp2.jpg" alt="Property 2"></div>
+            <div class="slide"><img src="temp3.jpg" alt="Property 3"></div>
+            <div class="slide"><img src="waterimg.webp" alt="Property 4"></div>
+            <div class="slide"><img src="temp2.jpg" alt="Property 5"></div>
+            <div class="slide"><img src="temp6.jpg" alt="Property 6"></div>
+        </div>
+        <!-- Navigation Buttons -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <!-- Overlay Text -->
+    <div class="hero-content">
+        <h1>Find Your Royal Property</h1>
+        <p>Explore the best properties with Royal Properties.</p>
+        <a href="Services.html#featured-listings"><button class="btn">Browse Listings</button></a>
+    </div>
+</section>
+
+
+<!-- more  -->
+ 
+<section id="featured-listings" class="featured-listings">
+    <h2>Featured Listings</h2>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="1.jpg" alt="Property 1" />
+                <div class="carousel-content">
+                    <h3>Modern Apartment</h3>
+                    <p>Rs 500,000 - Downtown City</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpg" alt="Property 2" />
+                <div class="carousel-content">
+                    <h3>Luxury Villa</h3>
+                    <p>Rs 1,200,000 - Seaside</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="3.jpg" alt="Property 3" />
+                <div class="carousel-content">
+                    <h3>Cozy Cottage</h3>
+                    <p>Rs 350,000 - Countryside</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="6.jpg" alt="Property 4" />
+                <div class="carousel-content">
+                    <h3>City Penthouse</h3>
+                    <p>Rs 850,000 - City Center</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="5.jpg" alt="Property 5" />
+                <div class="carousel-content">
+                    <h3>Spacious Condo</h3>
+                    <p>Rs 400,000 - Suburbs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- blog  -->
+ <!-- Blog Section -->
+<section id="blog" class="blog">
+    <div class="container">
+        <h2>Our Latest Blog Posts</h2>
+        <div class="blog-grid">
+            <!-- Dynamic Blog Posts will go here -->
+        </div>
+        <button id="load-more" class="btn">Load More</button>
+    </div>
+</section>
+
+<!-- contact  -->
+ <!-- Contact Us Section -->
+<section id="contact-us" class="contact-us">
+    <div class="container">
+        <!-- Section Title -->
+        <h2 class="section-title" id="contact">Contact Us</h2>
+
+        <div class="contact-grid">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Get in Touch</h3>
+                <form id="contact-form">
+                    <!-- Name Field -->
+                    <input type="text" placeholder="Your Name" required />
+                    
+                    <!-- Contact Number Field -->
+                    <input type="tel" placeholder="Your Contact Number" pattern="[0-9]{10}" required title="Please enter a valid 10-digit phone number" />
+                    
+                    <!-- Requirement Dropdown -->
+                    <select required>
+                        <option value="" disabled selected>Your Requirement</option>
+                        <option value="Hotel">Hotel</option>
+                        <option value="Guesthouse">Guesthouse</option>
+                        <option value="Restaurant">Restaurant</option>
+                        <option value="Resort">Resort</option>
+                        <option value="Club Cafe">Club Cafe</option>
+                        <option value="Rooftop">Rooftop</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    
+                    <!-- Message Field -->
+                    <textarea placeholder="Your Message" rows="3"></textarea>
+                    
+                    <!-- Submit Button -->
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            
+
+            <!-- Office Location Map -->
+            <div class="office-map">
+                <h3>Our Office Location</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509012!2d144.95592821532016!3d-37.81720987975179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43e1e2e5f9%3A0x5045675218ce860!2zTWVsYm91cm5lIFZJQyAzMDAxLCBBdXN0cmFsaWE!5e0!3m2!1sen!2sin!4v1679450346564!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <!-- Direct Contact Details -->
+            <div class="contact-details">
+                <h3>Direct Contact</h3>
+                <p><strong>Email:</strong> royalproperties-com@gmail.com</p>
+                <p><strong>Phone:</strong> +19-9999118993</p>
+                <p><strong>Head Office:</strong> Sonoth Janoobi,
+                    Kosi Khurd,
+                    Mathura, Uttar Pradesh - 281005</p>
+            </div>
+
+            <!-- Business Hours -->
+            <div class="business-hours">
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                <p>Saturday: 10:00 AM - 4:00 PM</p>
+                <p>Sunday: Closed</p>
+                <p>THIS WILL BE ALL DAYS 24*7</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <h3>Follow Us</h3>
+                <a href="#" class="social-icon facebook" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon linkedin" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="footer-section faq">
+                <h3>FAQs</h3>
+                <ul>
+                    <li><a href="#faq1">How to contact support?</a></li>
+                    <li><a href="#faq2">Where is your office located?</a></li>
+                    <li><a href="#faq3">What services do you offer?</a></li>
+                </ul>
+            </div>
+            
+
+            <!-- Emergency Contact -->
+            <div class="emergency-contact">
+                <h3>Emergency Contact</h3>
+                <p><strong>Hotline:</strong> +19-9999118993</p>
+                <p>Available 24/7 for emergencies.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Footer -->
+<footer id="main-footer">
+    <div class="footer-container">
+        <!-- Direct Contact Details -->
+        <div class="footer-section contact-details">
+            <h3>Contact Us</h3>
+            <p><strong>Email:</strong> royalproperties-com@gmail.com</p>
+            <p><strong>Phone:</strong> +19-9999118993</p>
+            <p><strong>Head Office:</strong> Village/Town: SONOTH JANUBI
+                Block: 0
+                Road/Street/Lane: JAJAMPATTI ROAD
+                City: SONOTH JANUBI
+                State: UTTAR PRADESH
+                District: MATHURA
+                Pin: 28100</p>
+        </div>
+
+        <!-- Business Hours -->
+        <div class="footer-section business-hours">
+            <h3>Business Hours</h3>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+            <p>Saturday: 10:00 AM - 4:00 PM</p>
+            <p>Sunday: Closed</p>
+            <p>THIS WILL BE ALL DAYS 24*7</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section social-links">
+            <h3>Follow Us</h3>
+            <a href="#" class="social-icon facebook" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon linkedin" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <!-- FAQ Section -->
+<div class="footer-section faq">
+    <h3>FAQs</h3>
+    <ul>
+        <li>
+            <a href="#faq1" class="faq-question">How to contact support?</a>
+            <p id="faq1" class="faq-answer">You can contact support via email at royalproperties-com@gmail.com or call us at +91-9999118993.</p>
+        </li>
+        <li>
+            <a href="#faq2" class="faq-question">Where is your office located?</a>
+            <p id="faq2" class="faq-answer">Our office are located at Mathura-Vrindavan,
+                Agra,
+                Lucknow,
+                Ayodhya,
+                Jaipur,
+                Delhi-NCR,
+                Rishikesh,
+                Manali,
+                Goa, and 
+                Other Locations</p>
+        </li>
+        <li>
+            <a href="#faq3" class="faq-question">What services do you offer?</a>
+            <p id="faq3" class="faq-answer">We offer Services Hotel sale-purchase,Hotel for lease, Property documentation and Site visits arrangement services.</p>
+        </li>
+    </ul>
+</div>
+
+
+        <!-- Emergency Contact -->
+        <div class="footer-section emergency-contact">
+            <h3>Emergency Contact</h3>
+            <p><strong>Hotline:</strong> +91-9999118993</p>
+            <p>Available 24/7 for emergencies.</p>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="footer-section newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Stay updated with the latest news and offers.</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 22 Jan. 2018 RoyalProperties. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

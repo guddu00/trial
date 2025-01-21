@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Services.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="Properties.css"> -->
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">Royal Properties</div>
+    <nav>
+      <div class="burger-menu" id="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Certificates.html">Certificates</a></li>
+        <li class="navbar-item">
+          <a href="tel:+9118008331883">
+            <i class="fas fa-phone-alt"></i> 18008331883
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="https://wa.me/919999118993" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2 class="section-title">Our Real Estate Services</h2>
+      <p class="section-description">We offer a wide range of real estate services to make your buying, selling, and
+        investing experience seamless and efficient.</p>
+
+      <div class="services-cards">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <i class="fas fa-home service-icon"></i>
+          <h3>Hotel Sale-Purchase</h3>
+          <p>We help you find your dream property with expert guidance through every step of the buying process.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <i class="fas fa-dollar-sign service-icon"></i>
+          <h3>Hotel for lease</h3>
+          <p>Looking to sell? We assist you with market analysis, property listing, and finding potential buyers.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <i class="fas fa-chart-line service-icon"></i>
+          <h3>Property Valuation</h3>
+          <p>We provide accurate property valuations based on current market trends and property condition.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <i class="fas fa-gavel service-icon"></i>
+          <h3>Legal Consultation</h3>
+          <p>Get expert legal advice on property-related issues, contracts, and agreements.</p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card">
+          <i class="fas fa-file-alt service-icon"></i>
+          <h3>Property Documentation</h3>
+          <p>We assist with preparing and reviewing all the necessary legal documents for buying or selling properties.
+          </p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card">
+          <i class="fas fa-balance-scale service-icon"></i>
+          <h3>Investment Advisory</h3>
+          <p>Our advisors provide expert advice to help you make profitable real estate investments.</p>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="service-card">
+          <i class="fas fa-map-marker-alt service-icon"></i>
+          <h3>Site Visits Arrangement</h3>
+          <p>We arrange personalized site visits to properties to give you a first-hand look at the options available.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Property Search Section -->
+  <section id="property-search" class="search-section">
+    <div class="container">
+      <h2>Find Your Dream Property</h2>
+      <div class="search-filters">
+        <input type="text" id="search-input" placeholder="Search for properties..." />
+        <select id="category-filter">
+          <option value="all">All Categories</option>
+          <option value="residential">Residential</option>
+          <option value="commercial">Commercial</option>
+          <option value="land">Plots/Land</option>
+        </select>
+        <button id="search-btn" class="btn-primary">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Listings Section -->
+  <section id="featured-listings" class="listings-section">
+    <div class="container">
+      <h2>Featured Listings</h2>
+      <div class="property-cards" id="property-cards">
+        <!-- Property cards will be dynamically inserted here -->
+
+        
+
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-overlay" id="close-modal"></div>
+        <div class="modal-content" id="modal-content">
+          <!-- Images will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer  -->
+  <!-- Footer -->
+  <footer id="main-footer">
+    <div class="footer-container">
+      <!-- Direct Contact Details -->
+      <div class="footer-section contact-details">
+        <h3>Contact Us</h3>
+        <p><strong>Email:</strong> royalproperties-com@gmail.com</p>
+        <p><strong>Phone:</strong> +19-9999118993</p>
+        <p><strong>Head Office:</strong> Sonoth Janoobi,
+          Kosi Khurd,
+          Mathura, Uttar Pradesh - 281005</p>
+      </div>
+
+      <!-- Business Hours -->
+      <div class="footer-section business-hours">
+        <h3>Business Hours</h3>
+        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+        <p>Saturday: 10:00 AM - 4:00 PM</p>
+        <p>Sunday: Closed</p>
+        <p>THIS WILL BE ALL DAYS 24*7</p>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="footer-section social-links">
+        <h3>Follow Us</h3>
+        <a href="#" class="social-icon facebook" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon linkedin" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="footer-section faq">
+        <h3>FAQs</h3>
+        <ul>
+          <li>
+            <a href="#faq1" class="faq-question">How to contact support?</a>
+            <p id="faq1" class="faq-answer">You can contact support via email at royalproperties-com@gmail.com or call
+              us at +91-9999118993.</p>
+          </li>
+          <li>
+            <a href="#faq2" class="faq-question">Where is your office located?</a>
+            <p id="faq2" class="faq-answer">Our office are located at Mathura-Vrindavan,
+              Agra,
+              Lucknow,
+              Ayodhya,
+              Jaipur,
+              Delhi-NCR,
+              Rishikesh,
+              Manali,
+              Goa, and
+              Other Locations</p>
+          </li>
+          <li>
+            <a href="#faq3" class="faq-question">What services do you offer?</a>
+            <p id="faq3" class="faq-answer">We offer Services Hotel sale-purchase,Hotel for lease, Property
+              documentation and Site visits arrangement services.</p>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- Emergency Contact -->
+      <div class="footer-section emergency-contact">
+        <h3>Emergency Contact</h3>
+        <p><strong>Hotline:</strong> +91-9999118993</p>
+        <p>Available 24/7 for emergencies.</p>
+      </div>
+
+      <!-- Newsletter Subscription -->
+      <div class="footer-section newsletter">
+        <h3>Subscribe to Our Newsletter</h3>
+        <p>Stay updated with the latest news and offers.</p>
+        <form id="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 22 Jan. 2018 RoyalProperties. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="Services.js"></script>
+  <script src="script.js"></script>
+  <!-- <script src="Properties.js"></script> -->
+</body>
+
+</html>
