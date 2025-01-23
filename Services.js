@@ -41,12 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "Hotel for Lease - 25+ Rooms Property",
       category: "land",
       price: "Rent: Rs 4 Lakh/month, Deposit: 2+1",
-      images: ["./images/5_1.jpg", "./images/5_2.jpg", "./images/5_3.jpg", "./images/5_4.jpg", "./images/5_5.jpg", "./images/5_6.jpg","./images/5_7.jpg", "./images/5_8.jpg"],
+      images: ["./images/5_1.jpg", "./images/5_2.jpg", "./images/5_3.jpg", "./images/5_4.jpg", "./images/5_5.jpg", "./images/5_6.jpg", "./images/5_7.jpg", "./images/5_8.jpg"],
       description: "Newly built 25+ room property with 2, 3, and 4-bed luxury rooms. Includes safe parking, lift, and reception.",
       location: "Vrindavan",
     }
   ];
-
 
   const propertyCards = document.getElementById('property-cards');
   const modal = document.getElementById('modal');
@@ -55,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Render properties
   function renderProperties(filteredProperties) {
-    propertyCards.innerHTML = '';
+    propertyCards.innerHTML = ''; // Clear existing cards
     filteredProperties.forEach(property => {
       const card = document.createElement('div');
       card.classList.add('property-card');
@@ -73,12 +72,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Attach event listeners to "View More" buttons
-    document.querySelectorAll('.view-more').forEach(button => {
-      button.addEventListener('click', event => {
-        const propertyId = event.target.getAttribute('data-id');
-        showPropertyImages(propertyId);
-      });
+    const viewMoreButtons = document.querySelectorAll('.view-more');
+    viewMoreButtons.forEach(button => {
+      button.removeEventListener('click', handleViewMore); // Remove old listeners to avoid duplicates
+      button.addEventListener('click', handleViewMore);
     });
+  }
+
+  // Handle the "View More" button click
+  function handleViewMore(event) {
+    const propertyId = event.target.getAttribute('data-id');
+    showPropertyImages(propertyId);
   }
 
   // Show property images in the modal
@@ -111,6 +115,18 @@ document.addEventListener('DOMContentLoaded', () => {
     renderProperties(filteredProperties);
   }
 
+  // Close modal when clicking on the close button
+  closeModal.addEventListener('click', () => {
+    modal.classList.remove('active');
+  });
+
+  // Close modal when clicking outside the modal content
+  modal.addEventListener('click', (e) => {
+    if (!modalContent.contains(e.target)) {
+      modal.classList.remove('active');
+    }
+  });
+
   // Initial render
   renderProperties(properties);
 
@@ -118,9 +134,4 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('search-btn').addEventListener('click', filterProperties);
   document.getElementById('search-input').addEventListener('input', filterProperties);
   document.getElementById('category-filter').addEventListener('change', filterProperties);
-
-  // Close modal
-  closeModal.addEventListener('click', () => {
-    modal.classList.remove('active');
-  });
 });
