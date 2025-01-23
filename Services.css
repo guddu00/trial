@@ -132,8 +132,9 @@ h2 {
 .search-filters button {
   padding: 10px;
   font-size: 1rem;
-  border: 2px solid #ccc;
+  border: 2px solid #ff8c00;
   border-radius: 5px;
+  outline: none;
 }
 
 .search-filters input {
@@ -141,15 +142,18 @@ h2 {
 }
 
 .search-filters button {
-  background-color: #16a085;
-  color: white;
+  background-color: #f79400;
+  color: black;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .search-filters button:hover {
-  background-color: #1abc9c;
+  background-color: #ff6a00;
 }
+
+
+
 
 /* Property Cards Section */
 .property-cards {
