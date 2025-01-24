@@ -166,6 +166,8 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(80%) saturate(1.5); /* Increase saturation to 150% */
+    transition: filter 0.3s ease; /* Smooth transition for hover effect */
 }
 
 /* Hero Content - Centered Text Overlay */
@@ -182,7 +184,7 @@ body {
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    text-shadow: 0 0 5px #000000, 0 0 10px #0000003b, 0 0 15px #00000025, 0 0 20px #00000041, 0 0 30px #000000, 0 0 40px #000000, 0 0 55px  rgba(206,89,55,0);
+    text-shadow: 4px -1px 18px rgba(0,0,0,0.76);
     color: orange;
 }
 
